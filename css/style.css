@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(243, 245, 252);
+}
+
+.area_principal {
+    background-color: rgb(243, 245, 252);
+    position: relative;
+    
+}
+
+.area-two {
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    margin-right: 30px;
+}
+
+#img-texto > img {
+    width: 70%;
+    /* background-color: red; */
+}
+
+#img-texto {
+    margin-right: 0px;
+    padding: 15% 5% 10%;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+#img-texto p {
+
+    color: #727070;
+}
+
+.logo {
+    margin: 50px 0 50px 50px;
+}
+
+#caja_Texto {
+    margin: 0 200px;
+    padding: 15px;
+    padding-right: 10%;
+    border: none;
+    font-size: 23px;
+    border-radius:15px;
+    color: #0A3871;
+    background-color: rgb(243, 245, 252);
+}
+
+#caja_Texto:focus {
+    outline: none;
+}
+
+#caja_Texto::placeholder {
+    color: rgb(10, 56, 113);
+}
+
+.caja_Botones {
+    margin: 300px 200px 30px;
+}
+
+.aviso {
+    color: gray;
+    font-size: 13px; 
+}
+
+.aviso img {
+    color: blck;
+}
+
+.btn-Encriptar {
+    padding: 20px 111px;
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    color: #FFF;
+    background-color: #0A3871;
+}
+
+/* .btn-Encriptar:hover {
+    font-size: 23px;
+} */
+
+ .btn-Desencriptar {
+    padding: 19px 99.5px;
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #0A3871;
+    border: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #0A3871;
+    background-color: #D8DFE8;
+}
+
+/* #resultado {
+    max-width: 300;
+} */
+
+#resultado {
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    margin-left: 100%;
+    font-size: 20px;
+    width: 100%;
+    max-width: 70%;
+    border: none;
+    color: #495b72;
+    word-wrap: break-word; /* Permite el salto de línea dentro de las palabras */
+}
+
+#btn-copiar {
+    position: relative; /* Asegura que el botón tenga un nivel superior */
+    z-index: 2; /* Asegura que el botón esté por encima del div #resultado */
+}
+
+
+@media (max-width: 768px) {
+    .area-two {
+        top: 30px;
+        margin-right: 10px;
+    }
+    
+    #img-texto {
+        padding: 10% 5% 25%;
+    }
+    
+    #img-texto > img {
+        width: 70%;
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px), (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+
+    .logo {
+        margin: 20px;
+    }
+
+    #caja_Texto {
+        padding: 10px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .caja_Botones {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .area-two {
+        top: 20px;
+        position: static;
+        margin: 10px auto;
+        width: 80%;
+
+    }
+    
+    #img-texto {
+        padding: 5% 2% 15%;
+    }
+    
+    #img-texto > img {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    #resultado {
+        position: absolute;
+        top: 75%;
+        right: 45%;
+        color: #0A3871;
+    }
+}
